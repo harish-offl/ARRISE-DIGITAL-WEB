@@ -241,6 +241,46 @@
     restart();
   }
 
+  /* ------------------------------------------------------------------
+     SERVICES
+     ------------------------------------------------------------------ */
+  function initServices() {
+    const cards = document.querySelectorAll('.service-card');
+    cards.forEach((card) => {
+      const toggle = card.querySelector('.service-card__toggle');
+      const panel = card.querySelector('.service-card__panel');
+      if (!toggle || !panel) return;
+
+      toggle.addEventListener('click', () => {
+        const open = toggle.getAttribute('aria-expanded') !== 'true';
+        toggle.setAttribute('aria-expanded', open);
+        panel.hidden = !open;
+        toggle.innerHTML = open ? 'Close <span>←</span>' : 'Explore Service <span>→</span>';
+      });
+    });
+  }
+
+  /* ------------------------------------------------------------------
+     PORTFOLIO FILTER
+     ------------------------------------------------------------------ */
+  function initPortfolio() {
+    const filters = document.querySelectorAll('.portfolio__filter');
+    const cards = document.querySelectorAll('.portfolio-card');
+    if (!filters.length || !cards.length) return;
+
+    filters.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        filters.forEach((b) => b.classList.remove('active'));
+        btn.classList.add('active');
+        const cat = btn.dataset.filter;
+        cards.forEach((c) => {
+          const show = cat === 'all' || c.dataset.category === cat;
+          c.style.display = show ? '' : 'none';
+        });
+      });
+    });
+  }
+
   function ready(fn) { document.readyState !== 'loading' ? fn() : document.addEventListener('DOMContentLoaded', fn); }
 
   function safe(fn) { try { fn(); } catch (e) { if (window.console) console.warn('ARRISE DIGITAL init error:', e); } }
@@ -253,5 +293,7 @@
     safe(initSkills);
     safe(initForms);
     safe(initReveals);
+    safe(initServices);
+    safe(initPortfolio);
   });
 })();
