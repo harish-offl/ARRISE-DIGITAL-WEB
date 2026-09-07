@@ -274,7 +274,8 @@
         btn.classList.add('active');
         const cat = btn.dataset.filter;
         cards.forEach((c) => {
-          const show = cat === 'all' || c.dataset.category === cat;
+          const cats = (c.dataset.category || 'all').split(',').map((s) => s.trim());
+          const show = cat === 'all' || cats.indexOf(cat) !== -1;
           c.style.display = show ? '' : 'none';
         });
       });

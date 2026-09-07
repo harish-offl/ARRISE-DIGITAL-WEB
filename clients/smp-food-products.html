@@ -9,10 +9,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'%3E%3Crect x='1' y='1' width='26' height='26' rx='7' fill='%23FB5607'/%3E%3Cpath d='M8 14.5 L11.5 18 L20 9.5' stroke='%23212529' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/reels.css">
 </head>
 <body>
 
-  <!-- NAV -->
   <header class="nav" id="nav">
     <div class="nav__bar">
       <a href="../index.html" class="nav__logo">
@@ -22,13 +22,15 @@
         </svg>
         <span>ARRISE <em>DIGITAL</em></span>
       </a>
-            <nav class="nav__links" id="navLinks">
-        <a href="index.html" class="nav__link">Home</a>
-        <a href="services.html" class="nav__link">Services</a>
-        <a href="work.html" class="nav__link">Work</a>
-        <a href="about.html" class="nav__link">About</a>
-        <a href="contact.html" class="nav__link">Contact</a>
+
+      <nav class="nav__links" id="navLinks">
+        <a href="../index.html" class="nav__link">Home</a>
+        <a href="../services.html" class="nav__link">Services</a>
+        <a href="../work.html" class="nav__link">Work</a>
+        <a href="../about.html" class="nav__link">About</a>
+        <a href="../contact.html" class="nav__link">Contact</a>
       </nav>
+
       <div class="nav__cta">
         <a href="../contact.html" class="btn btn--lime btn--sm"><span>Get A Quote</span></a>
         <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false">
@@ -39,12 +41,12 @@
   </header>
 
   <div class="mobile-menu" id="mobileMenu">
-        <nav class="mobile-menu__links">
-      <a href="index.html" class="m-link"><span>01</span>Home</a>
-      <a href="services.html" class="m-link"><span>02</span>Services</a>
-      <a href="work.html" class="m-link"><span>03</span>Work</a>
-      <a href="about.html" class="m-link"><span>04</span>About</a>
-      <a href="contact.html" class="m-link"><span>05</span>Contact</a>
+    <nav class="mobile-menu__links">
+      <a href="../index.html" class="m-link"><span>01</span>Home</a>
+      <a href="../services.html" class="m-link"><span>02</span>Services</a>
+      <a href="../work.html" class="m-link"><span>03</span>Work</a>
+      <a href="../about.html" class="m-link"><span>04</span>About</a>
+      <a href="../contact.html" class="m-link"><span>05</span>Contact</a>
     </nav>
     <div class="mobile-menu__foot">
       <p>New York, 347 5th Avenue, NY 10016</p>
@@ -52,37 +54,35 @@
     </div>
   </div>
 
-  <!-- CLIENT HERO -->
   <section class="client-hero section section--dark">
     <div class="container">
       <a href="../work.html" class="client-hero__back">← Back to Work</a>
+      <img src="../images/clients/smp-food-products.svg" alt="SMP Food Products logo" class="client-hero__logo" loading="lazy">
       <h1 class="client-hero__title reveal-up">SMP Food Products</h1>
+      <p class="client-hero__meta">@smpfoodproducts · Food / FMCG · Web Development</p>
     </div>
   </section>
 
-  <!-- PROJECT DETAILS -->
   <section class="client-details section section--dark">
     <div class="container">
       <div class="client-details__grid">
         <div class="client-details__overview reveal-up">
           <h2 class="client-details__title">Project Overview</h2>
           <p>Comprehensive digital strategy for organic food mix and malt products, including brand storytelling, social media marketing, and content creation that elevated their market presence and drove significant consumer engagement.</p>
-          <a href="https://example.com" target="_blank" rel="noopener" class="btn btn--lime btn--sm"><span>Visit Website</span></a>
         </div>
         <div class="client-details__services reveal-up" style="--d:.1s">
           <h3 class="client-details__subtitle">Services Provided</h3>
           <ul class="client-details__list">
             <li>Social Media Marketing</li>
+            <li>Web Development</li>
             <li>Content Creation</li>
             <li>Brand Identity</li>
-            <li>Product Photography</li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PROJECT STATS -->
   <section class="stats section section--dark" style="padding: clamp(40px, 6vw, 70px) 0;">
     <div class="container">
       <div class="stats__grid">
@@ -102,39 +102,21 @@
     </div>
   </section>
 
-  <!-- CLIENT VIDEOS -->
-  <section class="client-videos section section--dark">
+  <section class="client-reels section section--dark">
     <div class="container">
-      <div class="client-videos__grid">
-        <!-- SLOT 1 -->
-        <div class="video-slot reveal-up">
-          <video src="./smp-food-products/NO 1 NENDRAN MALT _.mp4" alt="smp-food-products reel" class="client-card__video" muted loop playsinline preload="metadata"></video>
-        </div>
-        <!-- SLOT 2 -->
-        <div class="video-slot reveal-up" style="--d:.1s">
-          <video src="./smp-food-products/NO 1 NENDRAN MALT _.mp4" alt="smp-food-products reel" class="client-card__video" muted loop playsinline preload="metadata"></video>
-        </div>
-        <!-- SLOT 3 -->
-        <div class="video-slot reveal-up" style="--d:.2s">
-          <video src="./smp-food-products/NO 1 NENDRAN MALT _.mp4" alt="smp-food-products reel" class="client-card__video" muted loop playsinline preload="metadata"></video>
-        </div>
-        <!-- SLOT 4 -->
-        <div class="video-slot reveal-up" style="--d:.3s">
-          <video src="./smp-food-products/NO 1 NENDRAN MALT _.mp4" alt="smp-food-products reel" class="client-card__video" muted loop playsinline preload="metadata"></video>
-        </div>
-        <!-- SLOT 5 -->
-        <div class="video-slot reveal-up" style="--d:.4s">
-          <video src="./smp-food-products/NO 1 NENDRAN MALT _.mp4" alt="smp-food-products reel" class="client-card__video" muted loop playsinline preload="metadata"></video>
-        </div>
-        <!-- SLOT 6 -->
-        <div class="video-slot reveal-up" style="--d:.5s">
-          <video src="./smp-food-products/NO 1 NENDRAN MALT _.mp4" alt="smp-food-products reel" class="client-card__video" muted loop playsinline preload="metadata"></video>
-        </div>
+      <div id="clientReels" class="client-reels__wrap" hidden></div>
+    </div>
+  </section>
+
+  <section class="project-nav section section--dark">
+    <div class="container">
+      <div class="project-nav__grid">
+        <a href="../work.html" class="project-nav__back"><span>←</span> All Projects</a>
+        <a href="vaigai-namma-taxi.html" class="project-nav__next">Next Project: Vaigai Namma Taxi <span>→</span></a>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer class="footer section--dark">
     <div class="container">
       <div class="footer__cta reveal-up">
@@ -149,11 +131,7 @@
   </footer>
 
   <script src="../js/script.js"></script>
+  <script src="../js/client-data.js"></script>
+  <script src="../js/client-reels.js"></script>
 </body>
 </html>
-
-
-
-
-
-
