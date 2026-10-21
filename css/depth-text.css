@@ -37,13 +37,14 @@
   z-index: 0;
   filter: saturate(0.95) brightness(0.92);
   pointer-events: none;
+  color: var(--color-primary);
 }
 
 .depth-text__face {
   position: relative;
   z-index: 1;
-  color: var(--depth-text-face-color);
-  text-shadow: var(--depth-text-shadow);
+  color: var(--color-text-light);
+  text-shadow: 0 4px 24px rgba(255, 107, 0, 0.4), 0 2px 8px rgba(0, 0, 0, 0.3);
   transform: translateZ(0.6px);
 }
 
