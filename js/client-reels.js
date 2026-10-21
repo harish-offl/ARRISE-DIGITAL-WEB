@@ -11,6 +11,11 @@
   var root = document.getElementById('clientReels');
   if (!root) return;
 
+  /* Resolve media paths to Git LFS media URLs when hosted on GitHub. */
+  function mediaUrl(path) {
+    return window.ARRISE_MEDIA ? window.ARRISE_MEDIA.url(path) : path;
+  }
+
   /* Detect current client from URL */
   var path = window.location.pathname;
   var slug = path.replace(/^.*\/clients\//, '').replace(/\.html.*$/, '').replace(/\/$/, '');
@@ -90,7 +95,7 @@
     video.loop = true;
     video.playsInline = true;
     video.preload = 'none';
-    video.src = r.video;
+    video.src = mediaUrl(r.video);
     video.setAttribute('aria-hidden', 'true');
     video.setAttribute('tabindex', '-1');
     card.querySelector('.reel-media').insertBefore(video, card.querySelector('.reel-shade'));
@@ -165,7 +170,7 @@
     v.muted = true;
     v.playsInline = true;
     v.preload = 'metadata';
-    v.src = reel.video;
+    v.src = mediaUrl(reel.video);
 
     var settled = false;
     function settle() {
@@ -421,7 +426,7 @@
     video.muted = true;
     syncMute();
     video.currentTime = 0;
-    video.src = reel.video;
+    video.src = mediaUrl(reel.video);
   }
 
   function step(dir) {
