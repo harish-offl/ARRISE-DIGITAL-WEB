@@ -450,8 +450,15 @@
     lastFocused = origin || document.activeElement;
     state.open = { client: client, index: index };
     viewer.hidden = false;
+    /* Show the big play button until playback actually starts. */
+    viewer.classList.add('is-paused');
+    viewer.classList.remove('is-closing');
     document.body.style.overflow = 'hidden';
     loadReel();
+    /* The stylesheet only reveals the viewer through .is-open. */
+    requestAnimationFrame(function () {
+      viewer.classList.add('is-open');
+    });
     var closeBtn = viewer.querySelector('.reel-viewer__close');
     if (closeBtn) closeBtn.focus();
   }
@@ -480,10 +487,16 @@
     syncMute();
     video.currentTime = 0;
     video.src = mediaUrl(reel.video);
+    /* The viewer video is preload="none", so the browser will not fetch it
+       until asked. Force the load and start playback (muted, so autoplay
+       is allowed) — otherwise the stage spins forever and never plays. */
+    try { video.load(); } catch (e) {}
+    var autoplay = video.play();
+    if (autoplay && typeof autoplay.catch === 'function') autoplay.catch(function () {});
   }
 
   function step(dir) {
-    if (!state.open) return;
+    if (!state.open || viewer.classList.contains('is-closing')) return;
     var reels = state.open.client.reels;
     state.open.index = (state.open.index + dir + reels.length) % reels.length;
     loadReel();
@@ -516,12 +529,19 @@
     if (!viewer || viewer.hidden) return;
     var video = viewer.querySelector('.reel-viewer__video');
     video.pause();
-    video.removeAttribute('src');
-    try { video.load(); } catch (e) {}
-    viewer.hidden = true;
-    document.body.style.overflow = '';
-    state.open = null;
-    if (lastFocused && lastFocused.focus) lastFocused.focus();
+    if (!viewer.classList.contains('is-closing')) {
+      viewer.classList.add('is-closing');
+      var done = function () {
+        viewer.classList.remove('is-open', 'is-closing');
+        viewer.hidden = true;
+        video.removeAttribute('src');
+        try { video.load(); } catch (e) {}
+        document.body.style.overflow = '';
+        state.open = null;
+        if (lastFocused && lastFocused.focus) lastFocused.focus();
+      };
+      setTimeout(done, reduced ? 0 : 320);
+    }
   }
 
   document.addEventListener('keydown', function (e) {
