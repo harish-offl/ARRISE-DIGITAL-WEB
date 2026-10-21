@@ -9,7 +9,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'%3E%3Crect x='1' y='1' width='26' height='26' rx='7' fill='%23FB5607'/%3E%3Cpath d='M8 14.5 L11.5 18 L20 9.5' stroke='%23212529' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/accordion-gallery.css">
 </head>
 <body>
 
@@ -24,11 +23,12 @@
         <span>ARRISE <em>DIGITAL</em></span>
       </a>
 
-                  <nav class="nav__links" id="navLinks">
+                        <nav class="nav__links" id="navLinks">
         <a href="index.html" class="nav__link">Home</a>
         <a href="services.html" class="nav__link">Services</a>
         <a href="work.html" class="nav__link">Work</a>
         <a href="about.html" class="nav__link">About</a>
+        <a href="team.html" class="nav__link">Team</a>
         <a href="contact.html" class="nav__link">Contact</a>
       </nav>
 
@@ -42,12 +42,13 @@
   </header>
 
   <div class="mobile-menu" id="mobileMenu">
-            <nav class="mobile-menu__links">
+                <nav class="mobile-menu__links">
       <a href="index.html" class="m-link"><span>01</span>Home</a>
       <a href="services.html" class="m-link"><span>02</span>Services</a>
       <a href="work.html" class="m-link"><span>03</span>Work</a>
       <a href="about.html" class="m-link"><span>04</span>About</a>
-      <a href="contact.html" class="m-link"><span>05</span>Contact</a>
+      <a href="team.html" class="m-link"><span>05</span>Team</a>
+      <a href="contact.html" class="m-link"><span>06</span>Contact</a>
     </nav>
     <div class="mobile-menu__foot">
       <p>New York, 347 5th Avenue, NY 10016</p>
@@ -60,14 +61,12 @@
     <div class="container">
       <div class="section__head">
         <div class="section__tag reveal-up"><span class="tag-num">04</span> About Us</div>
-        <h2 class="section__title reveal-up">Empowering your success<br>with <span class="lime-text">digital expertise</span></h2>
+        <h2 class="section__title reveal-up">About <span class="lime-text">Arrise Digital</span></h2>
       </div>
 
       <div class="about__grid">
         <div class="about__copy reveal-up" style="grid-column: span 2;">
-          <p>We don't sell campaigns — we build revenue systems. ARRISE DIGITAL pairs strategy, creative and media into one engine that turns attention into pipeline and pipeline into profit.</p>
-          <p>From the first discovery call to the final report, every decision is measured against one question: does this grow the business?</p>
-          <a href="work.html" class="link-arrow">About ARRISE DIGITAL <span>→</span></a>
+          <p>Arrise Digital was a <span class="keyword-highlight">creative digital agency</span> built with a simple vision — to help brands turn their ideas into <span class="keyword-highlight">meaningful digital experiences</span>. We believed that every brand has a <span class="keyword-highlight">brand story</span> worth telling, and our role was to bring that story to life through <span class="keyword-highlight">creativity</span>, <span class="keyword-highlight">strategy</span>, and <span class="keyword-highlight">innovation</span>. From building a strong <span class="keyword-highlight">digital identity</span> to <span class="keyword-highlight">creating content</span> that connects with people, Arrise Digital focused on making brands more visible, memorable, and impactful in the <span class="keyword-highlight">digital world</span>.</p>
         </div>
 
         <div class="about__skills" style="grid-column: span 2;">
@@ -85,13 +84,6 @@
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- ============ ACCORDION GALLERY ============ -->
-  <section class="section section--light" id="gallery">
-    <div class="container">
-      <div id="accordion-gallery-root"></div>
     </div>
   </section>
 
@@ -127,11 +119,12 @@
         <div class="footer__col">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="work.html">Work</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="work.html">Work</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="team.html">Team</a></li>
+              <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
 
@@ -155,34 +148,12 @@
 
       <div class="footer__bottom">
         <span>© 2025 ARRISE DIGITAL. All rights reserved.</span>
-        <a href="#" class="footer__credit">Designed with precision</a>
+        <a href="#" class="footer__credit">Designed by Arrise Digital ✦</a>
       </div>
     </div>
   </footer>
 
   <script src="js/script.js"></script>
-  <script src="js/accordion-gallery.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const items = [
-        { image: 'https://picsum.photos/id/1015/900/1200', label: 'Canyon', link: '#' },
-        { image: 'https://picsum.photos/id/1018/900/1200', label: 'Ridgeline', link: '#' },
-        { image: 'https://picsum.photos/id/1039/900/1200', label: 'Falls', link: '#' },
-        { image: 'https://picsum.photos/id/1043/900/1200', label: 'Harbour', link: '#' }
-      ];
-      const root = document.getElementById('accordion-gallery-root');
-      if (root && window.AccordionGallery) {
-        window.AccordionGallery.initAccordionGallery(root, items, {
-          defaultIndex: 1,
-          expandRatio: 0.52,
-          trigger: 'hover',
-          orientation: 'horizontal',
-          tilt: 8,
-          grayscale: true
-        });
-      }
-    });
-  </script>
 </body>
 </html>
 

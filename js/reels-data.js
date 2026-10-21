@@ -16,10 +16,10 @@ window.ARRISE_REELS = [
     page: 'clients/smp-food-products.html',
     description: 'Product marketing and creative social content for organic food mixes and natural malts.',
     reels: [
-      { id: 'smp-01', title: 'Nendran Malt', video: 'videos/smp-food-products/NO 1 NENDRAN MALT _.mp4' },
-      { id: 'smp-02', title: 'Mudavattukal Mix', video: 'videos/smp-food-products/NO 2 MUDAVATTUKAL MIX _.mp4' },
-      { id: 'smp-03', title: 'Red Banana Malt', video: 'videos/smp-food-products/NO 5 RED BANANA MALT _.mp4' },
-      { id: 'smp-04', title: 'Dates Powder', video: 'videos/smp-food-products/NO 6 DATES POWDER “.mp4' }
+      { id: 'smp-01', title: 'Nendran Malt', video: 'videos/smp/NO 1 NENDRAN MALT _.mp4' },
+      { id: 'smp-02', title: 'Mudavattukal Mix', video: 'videos/smp/NO 2 MUDAVATTUKAL MIX _.mp4' },
+      { id: 'smp-03', title: 'Red Banana Malt', video: 'videos/smp/NO 5 RED BANANA MALT _.mp4' },
+      { id: 'smp-04', title: 'Dates Powder', video: 'videos/smp/NO 6 DATES POWDER “.mp4' }
     ]
   },
   {
@@ -32,10 +32,10 @@ window.ARRISE_REELS = [
     page: 'clients/le-brew.html',
     description: 'Premium coffee experience — brand storytelling, lifestyle and promotional reels.',
     reels: [
-      { id: 'lebrew-01', title: 'Customer Reviews', video: 'videos/le-brew/NO 07 REVIEWS .mp4' },
-      { id: 'lebrew-02', title: 'Bride to Be', video: 'videos/le-brew/NO 09 BRIDE TO BE “.mp4' },
-      { id: 'lebrew-03', title: 'Voice Over Spot', video: 'videos/le-brew/NO 13 VOICE OVER _.mp4' },
-      { id: 'lebrew-04', title: 'Overloaded', video: 'videos/le-brew/NO 15 OVERLOADED _.mp4' }
+      { id: 'lebrew-01', title: 'Customer Reviews', video: 'videos/le breww/NO 07 REVIEWS .mp4' },
+      { id: 'lebrew-02', title: 'Bride to Be', video: 'videos/le breww/NO 09 BRIDE TO BE “.mp4' },
+      { id: 'lebrew-03', title: 'Voice Over Spot', video: 'videos/le breww/NO 13 VOICE OVER _.mp4' },
+      { id: 'lebrew-04', title: 'Overloaded', video: 'videos/le breww/NO 15 OVERLOADED _.mp4' }
     ]
   },
   {
@@ -48,10 +48,10 @@ window.ARRISE_REELS = [
     page: 'clients/tikka2tacco.html',
     description: 'Fusion eats — bold food marketing, viral reels and performance-driven ad creative.',
     reels: [
-      { id: 't2t-01', title: 'Reel 01', video: 'videos/tikka2tacco/NO 1 (2).mp4' },
-      { id: 't2t-02', title: 'Reel 02', video: 'videos/tikka2tacco/NO 2 (1).mp4' },
-      { id: 't2t-03', title: 'Reel 03', video: 'videos/tikka2tacco/NO 3.mp4' },
-      { id: 't2t-04', title: 'Reel 04', video: 'videos/tikka2tacco/NO 4 (1).mp4' }
+      { id: 't2t-01', title: 'Reel 01', video: 'videos/tikka 2 taco/NO 1 (2).mp4' },
+      { id: 't2t-02', title: 'Reel 02', video: 'videos/tikka 2 taco/NO 2 (1).mp4' },
+      { id: 't2t-03', title: 'Reel 03', video: 'videos/tikka 2 taco/NO 3.mp4' },
+      { id: 't2t-04', title: 'Reel 04', video: 'videos/tikka 2 taco/NO 4 (1).mp4' }
     ]
   },
   {
@@ -64,9 +64,9 @@ window.ARRISE_REELS = [
     page: 'clients/urs-choice.html',
     description: 'Specialised retail — launches, offers and engaging in-store content.',
     reels: [
-      { id: 'urs-01', title: 'Reel 01', video: 'videos/urs-choice/NO 1 (3).mp4' },
-      { id: 'urs-02', title: 'Reel 02', video: 'videos/urs-choice/NO 2 (2).mp4' },
-      { id: 'urs-03', title: 'Reel 03', video: 'videos/urs-choice/NO 3 (1).mp4' }
+      { id: 'urs-01', title: 'Reel 01', video: 'videos/urs choice/NO 1 (3).mp4' },
+      { id: 'urs-02', title: 'Reel 02', video: 'videos/urs choice/NO 2 (2).mp4' },
+      { id: 'urs-03', title: 'Reel 03', video: 'videos/urs choice/NO 3 (1).mp4' }
     ]
   },
   {
@@ -79,10 +79,10 @@ window.ARRISE_REELS = [
     page: 'clients/pst-construction.html',
     description: 'Construction and interiors — project showcases and trust-building content.',
     reels: [
-      { id: 'pst-01', title: 'Reel 01', video: 'videos/pst-construction/NO 1 (6).mp4' },
-      { id: 'pst-02', title: 'Reel 02', video: 'videos/pst-construction/NO 2 (4).mp4' },
-      { id: 'pst-03', title: 'Reel 03', video: 'videos/pst-construction/no 3.mp4' },
-      { id: 'pst-04', title: 'Reel 04', video: 'videos/pst-construction/no 4.mp4' }
+      { id: 'pst-01', title: 'Reel 01', video: 'videos/pst/NO 1 (6).mp4' },
+      { id: 'pst-02', title: 'Reel 02', video: 'videos/pst/NO 2 (4).mp4' },
+      { id: 'pst-03', title: 'Reel 03', video: 'videos/pst/no 3.mp4' },
+      { id: 'pst-04', title: 'Reel 04', video: 'videos/pst/no 4.mp4' }
     ]
   },
   {
@@ -95,10 +95,10 @@ window.ARRISE_REELS = [
     page: 'clients/abs-utility-solutions.html',
     description: 'Utility solutions — B2B content and lead-generation creative.',
     reels: [
-      { id: 'abs-01', title: 'Reel 01', video: 'videos/abs-utility-solutions/NO 1 (5).mp4' },
-      { id: 'abs-02', title: 'Reel 02', video: 'videos/abs-utility-solutions/NO 2 (3).mp4' },
-      { id: 'abs-03', title: 'Reel 03', video: 'videos/abs-utility-solutions/NO 3 (2).mp4' },
-      { id: 'abs-04', title: 'Reel 04', video: 'videos/abs-utility-solutions/NO 4 (2).mp4' }
+      { id: 'abs-01', title: 'Reel 01', video: 'videos/abs/NO 1 (5).mp4' },
+      { id: 'abs-02', title: 'Reel 02', video: 'videos/abs/NO 2 (3).mp4' },
+      { id: 'abs-03', title: 'Reel 03', video: 'videos/abs/NO 3 (2).mp4' },
+      { id: 'abs-04', title: 'Reel 04', video: 'videos/abs/NO 4 (2).mp4' }
     ]
   },
   {
@@ -111,10 +111,10 @@ window.ARRISE_REELS = [
     page: 'clients/bon-appetite.html',
     description: 'Restaurant and dining — appetizing reels that drive footfall and orders.',
     reels: [
-      { id: 'bon-01', title: 'Reel 01', video: 'videos/bon-appetite/NO 13.mp4' },
-      { id: 'bon-02', title: 'Reel 02', video: 'videos/bon-appetite/NO 15.mp4' },
-      { id: 'bon-03', title: 'Reel 03', video: 'videos/bon-appetite/NO 5.mp4' },
-      { id: 'bon-04', title: 'Reel 04', video: 'videos/bon-appetite/NO 7 (1).mp4' }
+      { id: 'bon-01', title: 'Reel 01', video: 'videos/bon appetite/NO 13.mp4' },
+      { id: 'bon-02', title: 'Reel 02', video: 'videos/bon appetite/NO 15.mp4' },
+      { id: 'bon-03', title: 'Reel 03', video: 'videos/bon appetite/NO 5.mp4' },
+      { id: 'bon-04', title: 'Reel 04', video: 'videos/bon appetite/NO 7 (1).mp4' }
     ]
   },
   {
@@ -127,8 +127,8 @@ window.ARRISE_REELS = [
     page: 'clients/break-time-restaurant.html',
     description: 'Restaurant specials and vibes — quick, catchy content that converts.',
     reels: [
-      { id: 'bt-01', title: 'Reel 01', video: 'videos/break-time-restaurant/NO 1 (1).mp4' },
-      { id: 'bt-02', title: 'Reel 02', video: 'videos/break-time-restaurant/NO 2.mp4' }
+      { id: 'bt-01', title: 'Reel 01', video: 'videos/break time/NO 1 (1).mp4' },
+      { id: 'bt-02', title: 'Reel 02', video: 'videos/break time/NO 2.mp4' }
     ]
   },
   {
@@ -141,10 +141,10 @@ window.ARRISE_REELS = [
     page: 'clients/dhiya-garments.html',
     description: 'Fashion and textiles — collections, styling and shopping-directed visuals.',
     reels: [
-      { id: 'dhiya-01', title: 'Reel 01', video: 'videos/dhiya-garments/NO 1.MP4' },
-      { id: 'dhiya-02', title: 'Reel 02', video: 'videos/dhiya-garments/NO 4.MP4' },
-      { id: 'dhiya-03', title: 'Reel 03', video: 'videos/dhiya-garments/NO 6.MP4' },
-      { id: 'dhiya-04', title: 'Reel 04', video: 'videos/dhiya-garments/NO 7.MP4' }
+      { id: 'dhiya-01', title: 'Reel 01', video: 'videos/dhiya garments/NO 1.MP4' },
+      { id: 'dhiya-02', title: 'Reel 02', video: 'videos/dhiya garments/NO 4.MP4' },
+      { id: 'dhiya-03', title: 'Reel 03', video: 'videos/dhiya garments/NO 6.MP4' },
+      { id: 'dhiya-04', title: 'Reel 04', video: 'videos/dhiya garments/NO 7.MP4' }
     ]
   },
   {
@@ -173,7 +173,7 @@ window.ARRISE_REELS = [
     page: 'clients/fun-spot.html',
     description: 'Games and entertainment — high-energy content for non-stop fun.',
     reels: [
-      { id: 'fun-01', title: 'Reel 01', video: 'videos/fun-spot/NO 1 (4).mp4' }
+      { id: 'fun-01', title: 'Reel 01', video: 'videos/fun spot/NO 1 (4).mp4' }
     ]
   }
 ];

@@ -1,7 +1,7 @@
 import os
 import re
 
-base = r'C:\Users\Annamalai\Downloads\ARRISE-NEW-WEB-main\ARRISE-NEW-WEB-main'
+base = r'C:\Users\Annamalai\Desktop\PROJECT FOLDER\ARRISE-DIGITAL-WEB'
 
 def prefix_for(path):
     rel = os.path.relpath(path, base).replace('\\', '/')
@@ -16,6 +16,7 @@ def nav_templates(prefix):
         '        <a href="{0}services.html" class="nav__link">Services</a>\n'
         '        <a href="{0}work.html" class="nav__link">Work</a>\n'
         '        <a href="{0}about.html" class="nav__link">About</a>\n'
+        '        <a href="{0}team.html" class="nav__link">Team</a>\n'
         '        <a href="{0}contact.html" class="nav__link">Contact</a>\n'
         '      </nav>'
     ).format(prefix)
@@ -26,7 +27,8 @@ def nav_templates(prefix):
         '      <a href="{0}services.html" class="m-link"><span>02</span>Services</a>\n'
         '      <a href="{0}work.html" class="m-link"><span>03</span>Work</a>\n'
         '      <a href="{0}about.html" class="m-link"><span>04</span>About</a>\n'
-        '      <a href="{0}contact.html" class="m-link"><span>05</span>Contact</a>\n'
+        '      <a href="{0}team.html" class="m-link"><span>05</span>Team</a>\n'
+        '      <a href="{0}contact.html" class="m-link"><span>06</span>Contact</a>\n'
         '    </nav>'
     ).format(prefix)
 
@@ -35,6 +37,7 @@ def nav_templates(prefix):
         '              <li><a href="{0}services.html">Services</a></li>\n'
         '              <li><a href="{0}work.html">Work</a></li>\n'
         '              <li><a href="{0}about.html">About</a></li>\n'
+        '              <li><a href="{0}team.html">Team</a></li>\n'
         '              <li><a href="{0}contact.html">Contact</a></li>'
     ).format(prefix)
 
